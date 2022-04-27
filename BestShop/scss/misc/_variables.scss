@@ -1,5 +1,5 @@
 /*
-Colors
+    Colors
 */
 
 $color-background: #FFFFFF;
@@ -17,3 +17,11 @@ $color-border-check: #95989A;
 $color-background-benefits: #F7F7F7;
 $color-border-benefits: #E8E9ED;
 $color-btn-menu: #07ACE6;
+
+
+/*
+    Grid variables
+*/
+$containerWidth: 1352px;
+$columns: 12;
+$gutter: 15px;
