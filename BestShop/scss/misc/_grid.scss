@@ -19,6 +19,10 @@
 
 .container {
   max-width: $containerWidth;
+  @media screen and (min-width: 1352px){
+    max-width: 1352px;
+    flex-direction: column;
+}
   margin: 0 auto;
 
   .row {

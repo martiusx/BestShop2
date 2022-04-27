@@ -139,6 +139,9 @@ table {
 /*
     Grid variables
 */
+/*
+    Text variables
+*/
 * {
   margin: 0;
   padding: 0;
@@ -150,8 +153,14 @@ table {
 }
 
 .container {
-  max-width: 1352px;
+  max-width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1352px) {
+  .container {
+    max-width: 1352px;
+    flex-direction: column;
+  }
 }
 .container .row {
   display: flex;
@@ -645,5 +654,47 @@ html {
 body {
   background: #FFFFFF;
   color: #000000;
+  min-height: 100vh;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+header .hero {
+  flex-direction: column;
+}
+
+nav [class=col-1] {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  nav [class=col-1] {
+    display: block;
+  }
+}
+
+.statistics {
+  flex-direction: column;
+}
+
+.benefits {
+  flex-direction: column;
+}
+
+.pricing {
+  flex-direction: column;
+}
+
+header img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

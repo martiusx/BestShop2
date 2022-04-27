@@ -1,0 +1,8 @@
+nav{
+    [class="col-1"]{
+        display: none;
+        @media screen and (min-width:768px){
+            display: block;
+        }
+    }
+}

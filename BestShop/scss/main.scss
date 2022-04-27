@@ -2,4 +2,15 @@
 @import "./misc/variables";
 @import "./misc/grid";
 
-@import "./general/global.scss";
+@import "./general/global";
+@import "./general/typography";
+
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/statistics";
+@import "./blocks/benefits";
+@import "./blocks/pricing";
+
+@import "./elements/logo";
+@import "./elements/img";
+@import "./elements/menu-mobile";
