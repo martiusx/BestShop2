@@ -19,6 +19,7 @@
 
 .container {
   max-width: $containerWidth;
+  overflow: hidden;
   @media screen and (min-width: 1352px){
     max-width: 1352px;
     flex-direction: column;

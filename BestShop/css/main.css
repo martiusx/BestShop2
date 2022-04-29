@@ -154,6 +154,7 @@ table {
 
 .container {
   max-width: 100%;
+  overflow: hidden;
   margin: 0 auto;
 }
 @media screen and (min-width: 1352px) {
@@ -708,6 +709,25 @@ nav .row {
   flex-direction: column;
 }
 
+.hero h1 {
+  font-size: 2.18rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 10.6rem;
+}
+.hero span {
+  text-align: center;
+  margin: 1.25rem 2rem 0 2rem;
+}
+.hero img {
+  margin-top: 3.18rem;
+  width: 210%;
+}
+@media screen and (min-width: 768px) {
+  .hero img {
+    width: 100%;
+  }
+}
+
 .nav__logo {
   font-size: 2rem;
   color: #08A6E4;
@@ -715,10 +735,6 @@ nav .row {
   font-weight: 300;
   background-color: #FFFFFF;
   margin: 1.06rem 1.56;
-}
-
-img {
-  width: 100%;
 }
 
 .nav__mobile {
@@ -780,5 +796,16 @@ img {
 }
 .nav__mobile--menu ul li:hover {
   color: #000000;
+}
+
+button {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border: 0;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
+  background-color: #08A6E4;
+  border-radius: 2.5rem;
+  padding: 1.37rem 5.75rem;
+  margin-top: 1.75rem;
 }
 /*# sourceMappingURL=main.css.map */
