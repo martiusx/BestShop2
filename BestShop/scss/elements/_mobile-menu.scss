@@ -1,0 +1,24 @@
+.nav__mobile--menu{
+    width: 100%;
+    position: absolute;
+    background-color: $color-background;
+    left: 0;
+    box-shadow: 0px 3px 6px #00000029;
+    transition: .7s;
+    transform: translateY(-100%);
+    top:0;
+    z-index: 1;
+    ul{
+        margin: 8rem 0 3rem 2rem;
+        li{
+            font-family: $font-Raleway;
+            color: $color-text-light;
+            font-weight: $weight-bold;
+            line-height: 3rem;
+            &:hover{
+                color: $color-text;
+            }
+        }
+       
+    }
+}

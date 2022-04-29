@@ -163,6 +163,7 @@ table {
   }
 }
 .container .row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -655,6 +656,9 @@ body {
   background: #FFFFFF;
   color: #000000;
   min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .middle {
@@ -663,17 +667,33 @@ body {
   place-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: #A5A5A5;
+}
+
 header .hero {
   flex-direction: column;
 }
 
-nav [class=col-1] {
+nav {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  position: relative;
+  padding: 1.06rem 1.56rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+nav [class=col-2] {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  nav [class=col-1] {
+  nav [class=col-2] {
     display: block;
   }
+}
+nav .row {
+  z-index: 100;
 }
 
 .statistics {
@@ -688,13 +708,77 @@ nav [class=col-1] {
   flex-direction: column;
 }
 
-header img {
+.nav__logo {
+  font-size: 2rem;
+  color: #08A6E4;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  background-color: #FFFFFF;
+  margin: 1.06rem 1.56;
+}
+
+img {
   width: 100%;
 }
 
+.nav__mobile {
+  cursor: pointer;
+}
+.nav__mobile:checked ~ .nav__hamburger span:nth-of-type(1) {
+  transform: rotate(225deg);
+  position: absolute;
+}
+.nav__mobile:checked ~ .nav__hamburger span:nth-of-type(2) {
+  display: none;
+}
+.nav__mobile:checked ~ .nav__hamburger span:nth-of-type(3) {
+  transform: rotate(-225deg);
+}
+.nav__mobile:checked ~ .nav__mobile--menu {
+  transform: translateY(0);
+}
+.nav__mobile input {
+  display: none;
+}
+.nav__mobile span {
+  height: 3px;
+  width: 20px;
+  background-color: #08A6E4;
+  display: block;
+  position: relative;
+  margin-top: 0.28rem;
+  transition: 1s;
+}
+.nav__mobile .nav__hamburger {
+  z-index: 100;
+}
 @media screen and (min-width: 768px) {
   .nav__mobile {
     display: none;
   }
+}
+
+.nav__mobile--menu {
+  width: 100%;
+  position: absolute;
+  background-color: #FFFFFF;
+  left: 0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  transition: 0.7s;
+  transform: translateY(-100%);
+  top: 0;
+  z-index: 1;
+}
+.nav__mobile--menu ul {
+  margin: 8rem 0 3rem 2rem;
+}
+.nav__mobile--menu ul li {
+  font-family: "Raleway", sans-serif;
+  color: #A5A5A5;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.nav__mobile--menu ul li:hover {
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
