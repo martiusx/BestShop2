@@ -649,6 +649,21 @@ table {
   }
 }
 
+.nav__menu--element:hover::after {
+  opacity: 1;
+}
+.nav__menu--element:hover a {
+  color: black;
+}
+
+.pricing__box:hover {
+  transform: scale(1.2);
+}
+
+.nav__mobile--menu li:hover {
+  color: #000000;
+}
+
 html {
   font-size: 16px;
 }
@@ -694,13 +709,25 @@ nav {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   z-index: 100;
 }
-nav [class=col-2] {
+nav .nav__menu--element {
+  position: relative;
+  justify-content: center;
   display: none;
 }
 @media screen and (min-width: 768px) {
-  nav [class=col-2] {
-    display: block;
+  nav .nav__menu--element {
+    display: inline-flex;
   }
+}
+nav .nav__menu--element::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: #08A6E4;
+  bottom: -150%;
+  opacity: 0;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   nav .row {
@@ -903,9 +930,6 @@ nav [class=col-2] {
     text-align: center;
   }
 }
-.pricing .pricing__wrapper .pricing__box:hover {
-  transform: scale(1.2);
-}
 .pricing .pricing__wrapper ul:nth-last-of-type(1) {
   margin: 1.56rem 0rem 3.18rem 0;
 }
@@ -974,7 +998,7 @@ nav [class=col-2] {
   background-color: #08A6E4;
 }
 .pricing .col-md-4:nth-of-type(2) .pricing__box ul li:nth-of-type(4)::before,
-.pricing .col-md-4:nth-of-type(2) .pricing__box ul li:nth-last-of-type(1)::before {
+.pricing .col-md-4:nth-of-type(2) .pricing__box ul li:nth-of-type(5)::before {
   content: "x";
   border-color: #FB3B64;
   color: #FB3B64;
@@ -1143,9 +1167,7 @@ img {
   color: #A5A5A5;
   font-weight: 700;
   line-height: 3rem;
-}
-.nav__mobile--menu ul li:hover {
-  color: #000000;
+  transition: 0.3s;
 }
 
 button {

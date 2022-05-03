@@ -1,0 +1,25 @@
+.nav__menu--element {
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:hover a {
+        color: black;
+    }
+
+}
+
+.pricing__box{
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.nav__mobile--menu{
+    li{
+        &:hover{
+            color: $color-text;
+        }
+    }
+}

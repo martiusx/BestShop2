@@ -34,9 +34,6 @@
                 flex-direction: column;
                 text-align: center;
             }
-            &:hover{
-                transform: scale(1.2);
-            }
         }
 
         ul:nth-last-of-type(1) {
@@ -121,7 +118,7 @@
         }
         ul{
             li:nth-of-type(4)::before,
-            li:nth-last-of-type(1)::before{
+            li:nth-of-type(5)::before{
                 content: 'x';
                border-color: $color-secondary;
                color: $color-secondary;
