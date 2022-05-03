@@ -1,12 +1,19 @@
 .footer {
     padding: 1.30rem 1.2rem;
-    box-shadow: 0px -5px 40px #00000029;    .row .col-6:nth-of-type(2){
+    box-shadow: 0px -5px 40px #00000029;  
+    .row .col-6:nth-of-type(2){
         display: flex;
         justify-content: flex-end;
+
         
         img {
             width: 3rem;
             margin-right: 2rem;
+            margin-top: 3rem;
+            @media screen and (min-width: 350px){
+                margin-top: 0;
+            }
+            }
         }
     }
     span{
@@ -14,4 +21,4 @@
         font-size: 0.68rem;
     }
    
-}
+

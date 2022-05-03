@@ -1,138 +1,143 @@
 .pricing {
-    flex-direction: column;
-    padding-top: 3.37rem;
-    margin-bottom: 7rem;
+  flex-direction: column;
+  padding-top: 3.37rem;
+  margin-bottom: 7rem;
 
-    h2 {
-        font-size: 2.25rem;
-        font-family: $font-Raleway;
+  h2 {
+    font-size: 2.25rem;
+    font-family: $font-Raleway;
+  }
+
+  .pricing__wrapper {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
     }
 
-    .pricing__wrapper {
-        margin-top: 2rem;
-        margin-bottom: 3.5rem;
-        line-height: 1.5rem;
-        display: flex;
-        justify-content: center;
+    .pricing__box {
+      position: relative;
+      border: 1px solid;
+      border-radius: 18px;
+      padding: 2rem;
+      width: 300px;
+      height: 350px;
+      transition: 0.3s;
 
-
-        @media screen and (min-width: 768px) {
-            margin-left: 0;
-
-        }
-
-        .pricing__box {
-            position: relative;
-            border: 1px solid;
-            border-radius: 18px;
-            padding: 2rem;
-            width: 300px;
-            height: 350px;
-            transition: .3s;
-
-            @media screen and(min-width:768px) {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        ul:nth-last-of-type(1) {
-            margin: 1.56rem 0rem 3.18rem 0;
-
-            li::before {
-                content: '';
-                background-image: url('/assets/Desktop/Checkmark.svg');
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: .4rem;
-                position: absolute;
-                width: 9px;
-                height: 9px;
-                border: 1px solid $color-third;
-                transform: translate(-200%, 50%);
-                border-radius: 2px;
-            }
-        }
-
-        ul:nth-of-type(1) {
-            text-align: center;
-            margin-right: 4rem;
-
-            @media screen and(min-width:768px) {
-                margin: 0;
-            }
-        }
-
-        h4 {
-            font-family: $font-Raleway;
-            font-weight: $weight-bold;
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
-
-        }
-
-        span {
-            font-weight: $weight-light;
-            font-size: 2.9rem;
-        }
-
-        p {
-            font-family: $font-Raleway;
-            font-size: .75rem;
-            font-weight: $weight-bold;
-        }
-
-        button {
-            position: absolute;
-            bottom: -10%;
-        }
-
-        ul {
-            li {
-                font-size: 0.87rem;
-            }
-        }
+      @media screen and(min-width:768px) {
+        flex-direction: column;
+        text-align: center;
+      }
     }
 
-    .col-md-4:nth-of-type(1) .pricing__box {
+    ul:nth-last-of-type(1) {
+      margin: 1.56rem 0rem 3.18rem 0;
+
+      li::before {
+        @extend %pseudo-elements;
+        background-image: url("/assets/Desktop/Checkmark.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 0.4rem;
+        width: 9px;
+        height: 9px;
+        border: 1px solid $color-third;
+        transform: translate(-200%, 50%);
+        border-radius: 2px;
+      }
+    }
+
+    ul:nth-of-type(1) {
+      text-align: center;
+      margin-right: 4rem;
+
+      @media screen and(min-width:768px) {
+        margin: 0;
+      }
+    }
+
+    h4 {
+      font-family: $font-Raleway;
+      font-weight: $weight-bold;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    span {
+      font-weight: $weight-light;
+      font-size: 2.9rem;
+    }
+
+    p {
+      font-family: $font-Raleway;
+      font-size: 0.75rem;
+      font-weight: $weight-bold;
+    }
+
+    button {
+      position: absolute;
+      bottom: -10%;
+    }
+
+    ul {
+      li {
+        font-size: 0.87rem;
+      }
+    }
+  }
+
+  .col-md-4:nth-of-type(1) .pricing__box {
+    border-color: $color-secondary;
+    button {
+      background-color: $color-secondary;
+    }
+    span {
+      color: $color-secondary;
+    }
+    ul {
+      li:nth-last-of-type(1)::before {
+        content: "x";
         border-color: $color-secondary;
-        button{
-            background-color: $color-secondary;
-        }
-        ul{
-            li:nth-last-of-type(1)::before{
-                content: 'x';
-               border-color: $color-secondary;
-               color: $color-secondary;
-               background: none;
-                line-height: .45rem;
-                font-size: .7rem;
-            }
-        }
+        color: $color-secondary;
+        background: none;
+        line-height: 0.45rem;
+        font-size: 0.7rem;
+      }
     }
+  }
 
-    .col-md-4:nth-of-type(2) .pricing__box {
-        border-color: $color-primary;
-        button{
-            background-color: $color-primary;
-        }
-        ul{
-            li:nth-of-type(4)::before,
-            li:nth-of-type(5)::before{
-                content: 'x';
-               border-color: $color-secondary;
-               color: $color-secondary;
-               background: none;
-                line-height: .45rem;
-                font-size: .7rem;
-            }
-        }
+  .col-md-4:nth-of-type(2) .pricing__box {
+    border-color: $color-primary;
+    button {
+      background-color: $color-primary;
     }
+    span {
+      color: $color-primary;
+    }
+    ul {
+      li:nth-of-type(4)::before,
+      li:nth-of-type(5)::before {
+        content: "x";
+        border-color: $color-secondary;
+        color: $color-secondary;
+        background: none;
+        line-height: 0.45rem;
+        font-size: 0.7rem;
+      }
+    }
+  }
 
-    .col-md-4:nth-of-type(3) .pricing__box {
-        border-color: $color-third;
-        button{
-            background-color: $color-third;
-        }
+  .col-md-4:nth-of-type(3) .pricing__box {
+    border-color: $color-third;
+    button {
+      background-color: $color-third;
     }
+    span {
+      color: $color-third;
+    }
+  }
 }

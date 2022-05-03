@@ -649,6 +649,11 @@ table {
   }
 }
 
+.pricing .pricing__wrapper ul:nth-last-of-type(1) li::before, .benefits .benefits__wrapper .benefits__text::before, .benefits .benefits__wrapper .benefits__img:nth-of-type(1)::after, nav .nav__menu--element::after {
+  content: "";
+  position: absolute;
+}
+
 .nav__menu--element:hover::after {
   opacity: 1;
 }
@@ -692,6 +697,10 @@ a {
   flex-direction: column;
 }
 
+span {
+  font-size: 1rem;
+}
+
 header {
   z-index: 100;
 }
@@ -720,8 +729,6 @@ nav .nav__menu--element {
   }
 }
 nav .nav__menu--element::after {
-  content: "";
-  position: absolute;
   width: 30%;
   height: 3px;
   background-color: #08A6E4;
@@ -757,6 +764,7 @@ nav .nav__menu--element::after {
 .statistics span {
   color: #A5A5A5;
   margin-bottom: 4rem;
+  font-size: 1rem;
 }
 
 .benefits {
@@ -786,8 +794,6 @@ nav .nav__menu--element::after {
   z-index: 1;
 }
 .benefits .benefits__wrapper .benefits__img:nth-of-type(1)::after {
-  content: "";
-  position: absolute;
   width: 127px;
   height: 127px;
   bottom: 30%;
@@ -798,6 +804,18 @@ nav .nav__menu--element::after {
 }
 .benefits .benefits__wrapper .benefits__text {
   text-align: left;
+  position: relative;
+}
+.benefits .benefits__wrapper .benefits__text::before {
+  width: 60%;
+  height: 3px;
+  bottom: -15%;
+  display: none;
+}
+@media screen and (min-width: 950px) {
+  .benefits .benefits__wrapper .benefits__text::before {
+    display: block;
+  }
 }
 .benefits .benefits__wrapper .benefits__text h3 {
   font-size: 1.87rem;
@@ -824,6 +842,9 @@ nav .nav__menu--element::after {
 .benefits .benefits__wrapper:nth-child(1) .col-md-6:nth-of-type(2) .benefits__img::after {
   background-color: #FB3B64;
 }
+.benefits .benefits__wrapper:nth-child(1) .benefits__text::before {
+  background-color: #FB3B64;
+}
 @media screen and (min-width: 768px) {
   .benefits .benefits__wrapper:nth-child(2) {
     flex-direction: row-reverse;
@@ -840,6 +861,9 @@ nav .nav__menu--element::after {
   border-radius: 50%;
   width: 185px;
   height: 185px;
+}
+.benefits .benefits__wrapper:nth-child(2) .benefits__text::before {
+  background-color: #08A6E4;
 }
 .benefits .benefits__wrapper:nth-child(3) {
   padding: 0;
@@ -879,6 +903,9 @@ nav .nav__menu--element::after {
   .benefits .benefits__wrapper:nth-child(3) .benefits__text {
     padding: 0 2rem;
   }
+}
+.benefits .benefits__wrapper:nth-child(3) .benefits__text::before {
+  background-color: #55DFB4;
 }
 .benefits .benefits__wrapper:nth-child(3) img {
   transform: translateY(15%);
@@ -934,12 +961,10 @@ nav .nav__menu--element::after {
   margin: 1.56rem 0rem 3.18rem 0;
 }
 .pricing .pricing__wrapper ul:nth-last-of-type(1) li::before {
-  content: "";
   background-image: url("/assets/Desktop/Checkmark.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 0.4rem;
-  position: absolute;
   width: 9px;
   height: 9px;
   border: 1px solid #55DFB4;
@@ -983,6 +1008,9 @@ nav .nav__menu--element::after {
 .pricing .col-md-4:nth-of-type(1) .pricing__box button {
   background-color: #FB3B64;
 }
+.pricing .col-md-4:nth-of-type(1) .pricing__box span {
+  color: #FB3B64;
+}
 .pricing .col-md-4:nth-of-type(1) .pricing__box ul li:nth-last-of-type(1)::before {
   content: "x";
   border-color: #FB3B64;
@@ -996,6 +1024,9 @@ nav .nav__menu--element::after {
 }
 .pricing .col-md-4:nth-of-type(2) .pricing__box button {
   background-color: #08A6E4;
+}
+.pricing .col-md-4:nth-of-type(2) .pricing__box span {
+  color: #08A6E4;
 }
 .pricing .col-md-4:nth-of-type(2) .pricing__box ul li:nth-of-type(4)::before,
 .pricing .col-md-4:nth-of-type(2) .pricing__box ul li:nth-of-type(5)::before {
@@ -1012,6 +1043,9 @@ nav .nav__menu--element::after {
 .pricing .col-md-4:nth-of-type(3) .pricing__box button {
   background-color: #55DFB4;
 }
+.pricing .col-md-4:nth-of-type(3) .pricing__box span {
+  color: #55DFB4;
+}
 
 .hero h1 {
   font-size: 2.18rem;
@@ -1021,6 +1055,7 @@ nav .nav__menu--element::after {
 .hero span {
   text-align: center;
   margin: 1.25rem 2rem 0 2rem;
+  font-size: 1rem;
 }
 .hero img {
   margin-top: 3.18rem;
@@ -1041,6 +1076,9 @@ nav .nav__menu--element::after {
     display: flex;
     place-items: center;
   }
+}
+.contact span {
+  font-size: 1rem;
 }
 .contact h3 {
   font-family: "Raleway", sans-serif;
@@ -1081,8 +1119,15 @@ nav .nav__menu--element::after {
 .footer .row .col-6:nth-of-type(2) img {
   width: 3rem;
   margin-right: 2rem;
+  margin-top: 3rem;
 }
-.footer span {
+@media screen and (min-width: 350px) {
+  .footer .row .col-6:nth-of-type(2) img {
+    margin-top: 0;
+  }
+}
+
+span {
   color: #A5A5A5;
   font-size: 0.68rem;
 }

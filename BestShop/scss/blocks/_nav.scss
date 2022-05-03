@@ -1,35 +1,33 @@
-nav{
-    padding: 1.06rem;
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
+nav {
+  padding: 1.06rem;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  position: relative;
+  background-color: $color-background;
+  box-shadow: 0px 3px 6px #00000029;
+  z-index: 100;
+  .nav__menu--element {
     position: relative;
-    background-color: $color-background;
-    box-shadow: 0px 3px 6px #00000029;
-    z-index: 100;
-    .nav__menu--element{
-        position: relative;
-        justify-content: center;
-        display: none;
-        @media screen and (min-width:768px){
-            display: inline-flex;
-            
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            width: 30%;
-            height: 3px;
-            background-color: $color-primary;
-            bottom: -150%;
-            opacity: 0;
-            transition: .3s;
-        }
+    justify-content: center;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
     }
-    .row{
-        @media screen and (min-width:768px){
-            justify-content: center;
-            place-items: center;
-        }
+    &::after {
+      @extend %pseudo-elements;
+      width: 30%;
+      height: 3px;
+      background-color: $color-primary;
+      bottom: -150%;
+      opacity: 0;
+      transition: 0.3s;
     }
+  }
+  .row {
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      place-items: center;
+    }
+  }
 }
