@@ -1,0 +1,42 @@
+.contact {
+    line-height: 3rem;
+    margin-left: 2.5rem;
+
+    .row .col-md-6 {
+
+        @media screen and(min-width:768px) {
+            display: flex;
+            place-items: center;
+        }
+    }
+
+    h3 {
+        font-family: $font-Raleway;
+        font-size: 2.5rem;
+    }
+
+    .contact__types {
+        margin-top: 2rem;
+        color: $color-text-light;
+        font-weight: $weight-bold;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and(min-width:768px) {
+            flex-direction: row;
+        }
+
+        img {
+            width: 1.6rem;
+
+        }
+
+        .contact__telephone {
+            margin-bottom: 2rem;
+            @media screen and(min-width:768px) {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+}

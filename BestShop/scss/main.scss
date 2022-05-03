@@ -1,6 +1,7 @@
 @import "./misc/reset";
 @import "./misc/variables";
 @import "./misc/grid";
+@import "./misc/placeholders";
 
 @import "./general/global";
 @import "./general/typography";
@@ -11,9 +12,12 @@
 @import "./blocks/benefits";
 @import "./blocks/pricing";
 @import "./blocks/hero";
+@import "./blocks/contact";
 
 @import "./elements/logo";
 @import "./elements/img";
 @import "./elements/hamburger-btn";
 @import "./elements/mobile-menu";
 @import "./elements/buttons";
+@import './elements/stat-circle';
+@import './elements/form';

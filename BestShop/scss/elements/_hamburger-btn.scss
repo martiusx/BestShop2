@@ -11,16 +11,23 @@
     }
 
     &:checked~.nav__hamburger span:nth-of-type(3) {
-        transform: rotate(-225deg);
+        transform: rotate(-225deg) ;
     }
+    &:checked~.nav__hamburger{
+        transform: translateY(70%) ;
+    }
+
     &:checked~.nav__mobile--menu {
+
         transform: translateY(0);
+        box-shadow: 0px 3px 6px #00000029;
+
     }
 
 
     input {
         display: none;
-        
+
     }
 
     span {
@@ -31,12 +38,18 @@
         position: relative;
         margin-top: 0.28rem;
         transition: 1s;
-        
+
     }
-    .nav__hamburger{
+
+    .nav__hamburger {
         z-index: 100;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1.06rem 1.56rem;
     }
-    @media screen and (min-width:768px){
+
+    @media screen and (min-width:768px) {
         display: none;
     }
 

@@ -1,3 +1,25 @@
-.statistics{
-    flex-direction: column;
+.statistics {
+    text-align: center;
+    font-family: $font-Raleway;
+    h2{
+        font-size: 1.9rem;
+        margin-bottom: 3rem;
+    }
+
+    img {
+        position: relative;
+        width: 4rem;
+    }
+
+    p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: $weight-extraBold;
+        font-size: 1.25rem;
+    }
+
+    span{
+        color: $color-text-light;
+        margin-bottom: 4rem;
+    }
 }

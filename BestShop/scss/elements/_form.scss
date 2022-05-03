@@ -1,0 +1,56 @@
+.contact{
+    form {
+        position: relative;
+        color:$color-primary;
+        line-height: 1rem;
+        font-weight: $weight-bold;
+        margin-right: 3rem;
+        margin-bottom: 10rem;
+        @media screen and(min-width:768px){
+            margin-right: 10rem;
+        }
+
+        input{
+            color: $color-text;
+            margin-bottom: 2rem;
+        }
+        label{
+            color: $color-text-check;
+            font-size: .75rem;
+            font-weight: $weight-regular;
+
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid $color-border-check;
+            width: 80%;
+        }
+        [name='check']{
+            width: auto;
+            margin-right: .4rem;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #95989A;
+            padding: 0.625rem;
+            margin-right: 0.625rem;
+            border-radius: 0.25rem;
+            margin-bottom: 0;
+
+        }
+
+        
+        input[name="check"]:checked {
+            background-image: url('/assets/Desktop/Checkmark.svg');
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        button{
+            position: absolute;
+            right: 0;
+
+        }
+    }
+}

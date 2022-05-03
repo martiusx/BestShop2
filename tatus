@@ -1,0 +1,47 @@
+[33mcommit 6388aa2ecbddee09405eae331820c5dc313bc09e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Sat Apr 30 00:50:35 2022 +0200
+
+    added style for hero section
+
+[33mcommit 3b30ef7bfd703294b3a6fb204c7a63cf32e66738[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Sat Apr 30 00:32:39 2022 +0200
+
+    added navigation style/not completed
+
+[33mcommit ffa960c876d485e111581559acb241fb7f34e3df[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Thu Apr 28 01:21:35 2022 +0200
+
+    initial page structure without styles
+
+[33mcommit e23ad4b96939f63f8e206027348516016b3d1b59[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Wed Apr 27 23:18:32 2022 +0200
+
+    added text variables
+
+[33mcommit 287c70d2d36e6d9a45e3e828f86bf2d5e78739f2[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Wed Apr 27 22:53:52 2022 +0200
+
+    added grid variables
+
+[33mcommit 2506d89b4f48f7706e96f10a5df00f5f2a93023d[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Wed Apr 27 22:47:21 2022 +0200
+
+    added color variables
+
+[33mcommit b8395590dba35c84b1440949c84d3d1a1e85fe10[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Wed Apr 27 22:10:36 2022 +0200
+
+    added reset and grid structure
+
+[33mcommit 227262f6e627da181981a105927dfca747429de7[m
+Author: martius <martius@DESKTOP-A2GUJGR.localdomain>
+Date:   Wed Apr 27 22:05:24 2022 +0200
+
+    page structure

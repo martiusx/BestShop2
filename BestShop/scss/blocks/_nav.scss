@@ -1,10 +1,12 @@
 nav{
+    padding: 1.06rem;
     display: flex;
     justify-content: space-between;
     place-items: center;
     position: relative;
-    padding: 1.06rem 1.56rem;
+    background-color: $color-background;
     box-shadow: 0px 3px 6px #00000029;
+    z-index: 100;
     [class="col-2"]{
         display: none;
         @media screen and (min-width:768px){
@@ -12,6 +14,9 @@ nav{
         }
     }
     .row{
-        z-index: 100;
+        @media screen and (min-width:768px){
+            justify-content: center;
+            place-items: center;
+        }
     }
 }
