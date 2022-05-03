@@ -1,8 +1,13 @@
-.nav__logo{
-    font-size: 2rem;
+.logo{
     color: $color-primary;
     font-family: $font-Raleway;
     font-weight: $weight-light;
-    background-color: $color-background;
+}
+.nav__logo{
+    font-size: 2rem;
+}
+
+.footer__logo{
+    font-size: 1.62rem;
 }
 
