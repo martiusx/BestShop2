@@ -1,0 +1,105 @@
+.calc {
+  margin-bottom: 10rem;
+  .calc__columns {
+    display: flex;
+    justify-content: center;
+    @media screen and(min-width:768px) {
+      justify-content: flex-end;
+    }
+
+    .calc__form {
+      width: 60%;
+      .calc__option {
+        padding: 0.68rem 1.25rem;
+        border: 1px solid $color-primary;
+        border-radius: 6px;
+        margin-bottom: 1.25rem;
+        width: 100%;
+      }
+      .calc__option,
+      .calc__option::placeholder {
+        color: $color-text-light;
+        font-family: $font-Open-Sans;
+      }
+      p {
+        margin-bottom: 1.68rem;
+        align-self: flex-start;
+        input {
+          margin-right: 0.4rem;
+        }
+      }
+      select.calc__option {
+        appearance: none;
+        background-image: url("/assets/Desktop/ArrowDown.png");
+        background-repeat: no-repeat;
+        background-position: 98% center;
+        background-size: 25px;
+      }
+    }
+  }
+  .calc__summary {
+    @media screen and(min-width:768px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .calc__summary--wrapper {
+      display: flex;
+      width: 60%;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      @media screen and(min-width:768px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 60%;
+      }
+      label {
+        background-color: #55dfb4;
+        border-radius: 6px;
+        padding: 0.4rem 1.25rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+        width: 100%;
+        opacity: 0;
+        transition: 0.4s;
+
+        p {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          font-size: 0.97rem;
+          span {
+            color: white;
+            font-size: 0.97rem;
+            &.calc__price {
+              font-weight: $weight-bold;
+            }
+          }
+        }
+        &.total {
+          margin-top: 1.37rem;
+          align-self: flex-end;
+          width: auto;
+          color: white;
+          background-color: $color-primary;
+          opacity: 1;
+
+          span {
+            margin-left: 2rem;
+            color: white;
+            font-size: 0.875rem;
+            font-weight: $weight-bold;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 2.25rem;
+    font-family: $font-Raleway;
+    margin-bottom: 3.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Raleway:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="js/calculator.js" defer></script>
 
     <title>BestShop</title>
   </head>
@@ -210,6 +211,72 @@
                   <li>Full support</li>
                 </ul>
                 <button>Begin</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="calc middle columns">
+          <h2>Calculate how much you’ll pay</h2>
+          <div class="row">
+            <div class="col-md-6 calc__columns">
+              <form action="" class="calc__form middle columns">
+                <input
+                  type="number"
+                  id="products"
+                  class="calc__option"
+                  min="0"
+                  placeholder="Products quantity"
+                />
+                <input
+                  type="number"
+                  id="orders"
+                  class="calc__option"
+                  min="0"
+                  placeholder="Estimated orders in month"
+                />
+                <select name="package" id="package" class="calc__option">
+                  <option value="" id="">Choose package</option>
+                  <option value="" id="basic">Basic</option>
+                  <option value="" id="professional">Professional</option>
+                  <option value="" id="">Premium</option>
+                </select>
+
+                <p><input type="checkbox" class="accounting" />Accountings</p>
+                <p>
+                  <input type="checkbox" class="terminal" />Rental of a payment
+                  terminal
+                </p>
+              </form>
+            </div>
+            <div class="col-md-6 middle calc__summary">
+              <div class="calc__summary--wrapper columns">
+                <label for="products">
+                  <p>
+                    Products <span class="calc__selected"></span
+                    ><span class="calc__price"></span>
+                  </p>
+                </label>
+                <label for="orders">
+                  <p>
+                    Orders <span class="calc__selected"></span
+                    ><span class="calc__price"></span>
+                  </p>
+                </label>
+                <label for="package">
+                  <p>
+                    Package <span class="calc__selected"></span
+                    ><span class="calc__price"></span>
+                  </p>
+                </label>
+                <label for="accounting">
+                  <p>Accounting <span class="calc__price"></span></p>
+                </label>
+                <label for="terminal">
+                  <p>Terminal<span class="calc__price"></span></p>
+                </label>
+                <label for="" class="total">Total <span>$0</span></label>
               </div>
             </div>
           </div>

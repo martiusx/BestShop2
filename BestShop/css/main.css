@@ -1299,4 +1299,121 @@ button {
   position: absolute;
   right: 0;
 }
+
+.calc {
+  margin-bottom: 10rem;
+}
+.calc .calc__columns {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .calc .calc__columns {
+    justify-content: flex-end;
+  }
+}
+.calc .calc__columns .calc__form {
+  width: 60%;
+}
+.calc .calc__columns .calc__form .calc__option {
+  padding: 0.68rem 1.25rem;
+  border: 1px solid #08A6E4;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+.calc .calc__columns .calc__form .calc__option::-moz-placeholder {
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+}
+.calc .calc__columns .calc__form .calc__option:-ms-input-placeholder {
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+}
+.calc .calc__columns .calc__form .calc__option,
+.calc .calc__columns .calc__form .calc__option::placeholder {
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+}
+.calc .calc__columns .calc__form p {
+  margin-bottom: 1.68rem;
+  align-self: flex-start;
+}
+.calc .calc__columns .calc__form p input {
+  margin-right: 0.4rem;
+}
+.calc .calc__columns .calc__form select.calc__option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("/assets/Desktop/ArrowDown.png");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .calc .calc__summary {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.calc .calc__summary .calc__summary--wrapper {
+  display: flex;
+  width: 60%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .calc .calc__summary .calc__summary--wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+  }
+}
+.calc .calc__summary .calc__summary--wrapper label {
+  background-color: #55dfb4;
+  border-radius: 6px;
+  padding: 0.4rem 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.calc .calc__summary .calc__summary--wrapper label p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.97rem;
+}
+.calc .calc__summary .calc__summary--wrapper label p span {
+  color: white;
+  font-size: 0.97rem;
+}
+.calc .calc__summary .calc__summary--wrapper label p span.calc__price {
+  font-weight: 700;
+}
+.calc .calc__summary .calc__summary--wrapper label.total {
+  margin-top: 1.37rem;
+  align-self: flex-end;
+  width: auto;
+  color: white;
+  background-color: #08A6E4;
+  opacity: 1;
+}
+.calc .calc__summary .calc__summary--wrapper label.total span {
+  margin-left: 2rem;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.calc h2 {
+  font-size: 2.25rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3.3rem;
+  display: flex;
+  justify-content: space-between;
+}
 /*# sourceMappingURL=main.css.map */
